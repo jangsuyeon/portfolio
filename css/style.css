@@ -375,20 +375,7 @@ h2 {
     }
 }
 
-
-
-
 @media all and (max-width: 1250px) {
-    #introimg {
-        float: none;
-        margin: auto;
-        width: 350px;
-    }
-
-    #introtxt {
-        float: none;
-        margin: auto;
-    }
     .cen {
         margin: 0 20px;
     }
@@ -404,8 +391,8 @@ h2 {
 }
 
 @media all and (max-width: 950px) {
-    #mv {
-        width: 650px;
+    .ps {
+        display: block;
     }
 }
 
@@ -417,24 +404,9 @@ h2 {
         width: 500px;
         /* height: 530px; */
     }
-
-    .slidebox {
-        display: none;
-    }
-
-    .slidetxt {
-        width: 100%;
-    }
-
-    .slick-prev {
-        left: calc(100% - 640px);
-    }
-
-    .slick-dots {
-        top: 88%;
-    }
     .license-each {
         margin-bottom: 20px;
+        margin-right: 0;
     }
 }
 
@@ -445,6 +417,17 @@ h2 {
 
     .slick-prev {
         left: calc(100% - 395px);
+    }
+    .myName {
+        font-size: 3rem;
+    }
+    .contact {
+        display: block;
+    }
+    .ps {
+        display: block;
+        margin-left: 0;
+        margin-top: 1rem;
     }
 }
 
