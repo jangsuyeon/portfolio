@@ -408,6 +408,13 @@ h2 {
         margin-bottom: 20px;
         margin-right: 0;
     }
+    .modal-body {
+        padding: 2rem 3rem;
+    }
+    .tt-span {
+        display: block;
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 550px) {
@@ -429,6 +436,7 @@ h2 {
         margin-left: 0;
         margin-top: 1rem;
     }
+   
 }
 
 @media (min-width: 576px) {
