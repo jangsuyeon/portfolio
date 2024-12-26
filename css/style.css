@@ -422,7 +422,7 @@ h2 {
 
 @media all and (max-width: 550px) {
     article {
-        padding: 2rem;
+        padding: 2rem 0;
     }
     .myName {
         font-size: 3rem;
