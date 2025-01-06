@@ -364,6 +364,15 @@ h2 {
     width: 15%;
 }
 
+.project-think {
+    margin-top: 50px;
+}
+.think-title {
+    border-bottom: 1px solid #bcbcbc;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+}
+
 
 #footer {
     text-align: center;
