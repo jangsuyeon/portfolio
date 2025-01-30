@@ -373,6 +373,11 @@ h2 {
     font-size: 1.4rem;
 }
 
+.noteCaptionImg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 
 #footer {
     text-align: center;
@@ -404,6 +409,9 @@ h2 {
 @media all and (max-width: 950px) {
     .ps {
         display: block;
+    }
+    .project-logo img {
+        margin: 20px 0;
     }
 }
 
