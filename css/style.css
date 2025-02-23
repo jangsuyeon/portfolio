@@ -435,7 +435,7 @@ h2 {
 }
 
 .section-title .container .title h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: capitalize;
     font-family: 'Roboto', sans-serif;
     line-height: 5rem;
@@ -443,7 +443,7 @@ h2 {
 }
 
 .section-title .container .title h1 span {
-    font-size: 5rem;
+    font-size: 4rem;
     -webkit-text-stroke: 1px #333;
     color: #fff;
     font-family: 'Roboto', sans-serif;
