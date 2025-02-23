@@ -67,6 +67,7 @@ ul.list-style-custom li::before {
     border-bottom: none;
     background-color: #171717;
     color: #fff;
+    padding: 1rem 2rem;
 }
 
 .btn-close {
