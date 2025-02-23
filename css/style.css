@@ -65,7 +65,12 @@ ul.list-style-custom li::before {
 }
 .modal-header {
     border-bottom: none;
-    margin: 0 1rem;
+    background-color: #171717;
+    color: #fff;
+}
+
+.btn-close {
+    background-image: url(../images/close.svg);
 }
 
 .modal-body {
