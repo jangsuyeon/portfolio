@@ -574,6 +574,10 @@ h2 {
 }
 
 @media all and (max-width: 550px) {
+    #intro {
+        background-size: 80%;
+        background-position: calc(100% - 10px) calc(100% - 20px);
+    }
     article {
         padding: 2rem 0;
     }
