@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-
+/* roboto폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @font-face {
     font-family: 'NanumSquareRound';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
@@ -23,7 +25,7 @@
 /* 354649 / 6C7A89 / A3C6C4 / E0E7E9 */
 body {
     color: #333;
-    font-family: 'NanumSquareRound';
+    font-family: 'Roboto', sans-serif;
     word-break: keep-all;
 }
 
@@ -33,7 +35,7 @@ a {
 }
 
 article {
-    padding: 5rem 0;
+    padding-bottom: 3rem;
 }
 
 img {
@@ -83,8 +85,36 @@ ul.list-style-custom li::before {
 
 #intro {
     min-height: 100vh;
-    display: flex;
+    /* display: flex; */
+    padding-top: 4rem;
     align-items: center;
+    background: #00000033 url(../images/Group\ 6.png) no-repeat calc(100% - 50px) calc(100% - 30px) / 50%;
+}
+
+/* #intro p {
+    font-family: "Roboto Mono", serif;
+    color: #fff;
+} */
+
+#intro h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.nameBox {
+    display: inline-block;
+    background-color: #000;
+    padding: 5px;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px #00000073;
+    margin-bottom: 20px;
+}
+
+.passion {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .profile-img {
@@ -167,7 +197,8 @@ h2 {
     width: 10px;
     height: 10px;
     content: '';
-    background: #2c98f0;
+    /* background: #2c98f0; */
+    background: #000;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -180,7 +211,11 @@ h2 {
     right: 0;
 }
 
-.progress-bar.color-1 {
+.progress-bar {
+    background: #000;
+}
+
+/* .progress-bar.color-1 {
     background: #2c98f0;
 }
 
@@ -250,7 +285,7 @@ h2 {
 
 .progress-bar.color-6 span {
     color: #4054b2;
-}
+} */
 
 .edu-each {
     margin: 1.5rem 0;
@@ -384,6 +419,94 @@ h2 {
     padding: 2rem 0;
     color: #bcbcbc;
 }
+
+.section-title .container {
+    width: 100%;
+}
+
+.section-title .container .title {
+    margin: 30px auto 0;
+    padding: 30px 30px 0;
+}
+
+.section-title .container .title h1 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    line-height: 5rem;
+    padding: 10px 0;
+}
+
+.section-title .container .title h1 span {
+    font-size: 5rem;
+    -webkit-text-stroke: 1px #333;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.section-title .container .title .context {
+    line-height: 2rem;
+}
+
+.section-title .container .title .context p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform:
+        uppercase;
+    padding: 10px 0;
+}
+
+.section-title .container .title .context span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+@media (min-width:768px) {
+    .section-title .container .title {
+        margin: 30px auto;
+    }
+
+    .section-title .container .title h1 {
+        text-align: center;
+    }
+
+    .section-title .container .title .context p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 28px;
+        letter-spacing: -0.7px;
+        color: #000;
+    }
+
+    .section-title .container .title .context span {
+        margin: 10px 0 40px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: -0.3px;
+        color: #333;
+    }
+}
+
+
+@media (min-width:1200px) {
+    .section-title .container .title {
+        width: 60%;
+        text-align: center;
+    }
+
+    .section-title .container .title h1 {
+        font-size: 8rem;
+    }
+
+    .section-title .container .title h1 span {
+        font-size: 8rem;
+    }
+}
+
 
 @media screen and (max-width: 1200px) {
     .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
