@@ -3,6 +3,7 @@
 /* roboto폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* font-family: "Roboto Mono", serif; */
 @font-face {
     font-family: 'NanumSquareRound';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
@@ -164,6 +165,35 @@ h2 {
 
 .skill-txt {
     margin: 20px 0 40px;
+}
+
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
+    padding: 2rem;
+    background-color: #0000000d;
+}
+
+.using-title p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.using-lang-box ul {
+    padding: 0;
+}
+
+.using-lang {
+    display: inline-block;
+    border-radius: .5rem;
+    list-style: none;
+    margin-right: 5px;
+    padding: .25rem .75rem;
+    color: #ffffff;
+    margin-bottom: 5px;
 }
 
 .progress-wrap {
@@ -430,6 +460,10 @@ h2 {
     width: 100%;
 }
 
+.section-title p {
+    margin: 0;
+}
+
 .section-title .container .title {
     margin: 30px auto 0;
     padding: 30px 30px 0;
@@ -458,9 +492,9 @@ h2 {
 .section-title .container .title .context p {
     font-size: 1.3rem;
     font-weight: 600;
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
     padding: 10px 0;
+    margin-top: 1rem;
 }
 
 .section-title .container .title .context span {
@@ -600,5 +634,8 @@ h2 {
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 1000px;
+    }
+    .section-title .container .title .context p {
+        margin-top: 0;
     }
 }
