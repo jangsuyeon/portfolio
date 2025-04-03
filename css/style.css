@@ -397,12 +397,18 @@ h2 {
     padding-left: 20px;
 }
 
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 .project-box {
     border: 1px solid #eee;
     border-radius: 10px;
     cursor: pointer;
     margin-bottom: 20px;
-    height: 250px;
+    height: 300px;
 }
 .project-intro {
     padding: 20px;
@@ -414,10 +420,20 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 250px;
 }
 
 .project-logo img {
     max-width:250px;
+}
+
+.project-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid #eee;
+    margin-bottom: 0;
 }
 
 .ps {
@@ -551,12 +567,16 @@ h2 {
     .section-title .container .title h1 span {
         font-size: 8rem;
     }
+   
 }
 
 
 @media screen and (max-width: 1200px) {
     .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
         font-size: 28px;
+    }
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -605,6 +625,9 @@ h2 {
     .tt-span {
         display: block;
         width: 100%;
+    }
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
